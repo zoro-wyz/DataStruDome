@@ -21,6 +21,11 @@ public class BinarySearchTest {
         int index = -1;
         while (true){
 
+            //当开始值大于等于结束值时，说明没有该元素
+            if (begin >= end){
+                index = -1 ;
+                break;
+            }
             //先判断中间元素
             if ( target == array[mid] ){
                 index = mid;
